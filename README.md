@@ -1,9 +1,15 @@
-# striptest
+# Checking the count of clicks 
+
+This is autotest that is run in **Chromium**  to check that the amount of clicks is incremented when specific link is visited.
 
 Clone the project
 
-Inside a project directory run:
-**npm install**
+Run docker desktop app on your machine
 
-When all dependencies are installed (make sure there is no error messages in IDE) run:
-**npx playwright test strip.spec.js --project=chromium**
+Inside a project directory build docker image:
+**docker build -t test .**
+
+When build is completed, run:
+**docker run test**
+
+
