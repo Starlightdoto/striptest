@@ -55,6 +55,10 @@ test.describe('Check count of clicks', () => {
       await mainPage.reload();
 
       await mainPage.locator(reportButtonXPATH).click();
+      
+      await mainPage.reload();
+
+      await mainPage.locator(reportButtonXPATH).click();
 
       const finalClicksCount = Number(await mainPage.locator(clicksXPATH).textContent());
       console.log(finalClicksCount);
